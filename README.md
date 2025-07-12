@@ -20,7 +20,58 @@ This project uses a text-to-3D generative diffusion model to create assets like 
 
 ## 🚀 How to Use
 
-### 1. Clone the Repo
-```bash
-git clone https://github.com/yourusername/text-to-3d-bunny.git
-cd text-to-3d-bunny
+### 🔗 Step 1: Open the Colab Notebook
+Click below to launch the notebook in Google Colab  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebook/bunny_3d_generator.ipynb)
+
+---
+
+### ⚙️ Step 2: Customize the Generation
+
+In the notebook cells, you can tweak:
+
+- 🧠 **Prompt**  
+  Change the `prompt` string to anything you like (e.g., `"a pink bunny with blue eyes"`).  
+  > Pro tip: More detailed prompts = better results.
+
+- 🧪 **Batch Size**  
+  Controls how many different variations you'll generate at once.  
+  Example: `batch_size = 4` will give 4 different outputs.
+
+- 🎯 **Size**  
+  Sets the resolution of the renders (e.g., `size = 256`).  
+  > Higher values give better visuals but take more time to render.
+
+---
+
+### ▶️ Step 3: Run the Notebook
+
+Run each cell in order (top to bottom).  
+The notebook will:
+
+- Load the model
+- Generate 3D latents from your prompt
+- Decode them into mesh files
+- Render and display previews (as GIFs or images)
+
+---
+
+### 💾 Step 4: Download and View Your 3D Model
+
+- Output files are saved in `.ply` and `.obj` formats by default.
+- You can modify the code to also save as `.glb` if needed.
+- After downloading, **view your models instantly** using:
+
+🔗 [https://3dviewer.net/](https://3dviewer.net/)
+
+Just drag and drop your downloaded `.obj`, `.ply`, or `.glb` files to preview them in 3D.
+
+---
+
+## 🧪 Example Prompt
+
+```python
+prompt = "a pink bunny with blue eyes"
+batch_size = 4
+size = 256
+
