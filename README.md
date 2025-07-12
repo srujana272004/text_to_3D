@@ -13,9 +13,8 @@ This project uses a text-to-3D generative diffusion model to create assets like 
 
 ## 📦 Files Included
 - [`3D_model.ipynb`](https://colab.research.google.com/drive/1Wjq21-CHf_8c-1i513OjgFVVrDm8CQym?usp=sharing): Colab code for generating 3D assets.
-- [`outputs/bunny.glb`](outputs/bunny.glb): GLB format model output.
-- [`renders/screenshot_1.png`](renders/screenshot_1.png): Visual render of the model.
-- [`assets/render_clip.mp4`](assets/render_clip.mp4): [Optional] Video showing asset use.
+- OBJ and PLY format model output.
+- Visual render of the model.
 
 ---
 
